@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* navbar section  */
+
+.navbar {
+    padding: 20px;
+    background: #c10049bf;
+}
+
+.navbar .navbar-toggler {
+    color: #fff !important;
+    background: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    outline: none;
+    border: none;
+}
+
+.navbar #navbarNav {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navbar .navbar-brand {
+    color: #f1f1f1;
+    font-size: 30px;
+    margin-left: 0px;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand i {
+    font-size: 25px;
+    background: #c10049bf;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+.navbar .collapse {
+    background: #c10049bf
+}
+
+.navbar .dropdown-menu{
+    width: 12px;
+}
+
+.navbar .dropdown-menu li a{
+    color: #c10049bf;
+    font-size: 15px;
+}
+
+.navbar ul li .bi{
+    background: #fff;
+    color: #c10049bf;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.navbar ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.navbar ul li a:hover {
+    color: #FFA500;
+}
+
+.name{
+    font-size: 30px;
+    background-color: #c10049bf;
+    color: #FFA500;
+    padding: 50px;
+}
+
+/* hero section  */
+
+.hero-section {
+    padding: 20px;
+    background:#c10049bf;
+}
+
+.hero-section .text-content {
+    margin-top: 150px;
+}
+
+.hero-section h1 {
+    font-size: 60px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.hero-section p {
+    margin-top: 30px;
+    color: #d1d1d1;
+}
+
+.hero-section button {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #FFA500;
+    height: 50px;
+    width: 170px;
+}
+
+.hero-section button:hover {
+    border: 1px solid #FFA500;
+    background: #c10049bf;
+}
+
+.hero-section button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-section img {
+    height: 600px;
+    width: 1000px;
+}
+
+/* schemes section  */
+
+.schemes-section {
+    padding: 100px;
+    background-color: #fbfbfb;
+}
+
+
+
+.schemes-section .schemes .row1 {
+    margin-bottom: 40px;
+}
+
+.schemes-section .schemes .card {
+    border: none;
+    border-radius: 15px;
+    width: 280px;
+    height: 320px;
+    padding: 10px;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.schemes-section .schemes .card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background: #f0f0f0;
+}
+
+
+.schemes-section .schemes .card:hover {
+    background-color: #c10049bf;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.schemes-section .schemes .card:hover h4 {
+    color: #fff;
+}
+
+.schemes-section .schemes .card:hover p {
+    color: #d1d1d1;
+}
+
+.schemes-section .schemes .card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+}
+
+.schemes-section .schemes .card p {
+    font-size: 15px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.schemes-section .text-content {
+    margin-top: 80px;
+}
+
+.schemes-section .text-content hr {
+    height: 5px;
+    background-color: #333;
+    border: none;
+}
+
+.schemes-section .text-content h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #FFA500;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.schemes-section .text-content h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: #c10049bf;
+}
+
+.schemes-section .text-content p {
+    font-size: 17px;
+    margin-top: 50px;
+    margin-left: 30px;
+    color: #555;
+}
+
+.schemes-section .text-content button {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #c10049bf;
+    height: 50px;
+    width: 170px;
+}
+
+.schemes-section .text-content button:hover {
+    background-color: #fff;
+    border: 2px solid #c10049bf;
+    color: #c10049bf;
+}
+
+/* about section  */
+
+.about-section {
+    padding: 100px;
+}
+
+.about-section img {
+    height: 450px;
+    width: 600px;
+    margin-top: 60px;
+    border-radius: 40px;
+}
+
+.about-section img:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.about-section .text-content h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #FFA500;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.about-section .text-content h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: #c10049bf;
+}
+
+.about-section .text-content p {
+    font-size: 17px;
+    margin-top: 50px;
+    margin-left: 30px;
+    color: #555;
+}
+
+.about-section .text-content button {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+    background-color: #c10049bf;
+    height: 50px;
+    width: 170px;
+    text-transform: capitalize;
+}
+
+.about-section .text-content button:hover {
+    background-color: #fff;
+    border: 2px solid #c10049bf;
+    color: #c10049bf;
+}
+
+
+/* contact section  */
+
+.contact-section {
+    background: #fbfbfb;
+    padding: 100px;
+}
+
+.contact-section h1 {
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: bold;
+    color: #c10049bf;
+    margin-bottom: 100px;
+}
+
+.contact-section .info-box {
+    background-color: transparent;
+    border: none;
+    height: 200px;
+    width: 230px;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section .info-box .bi {
+    background: #c10049bf;
+    border-radius: 55%;
+    padding: 15px 18px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-section .info-box h3 {
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.contact-section .info-box p {
+    font-size: 15px;
+    color: #777;
+}
+
+.contact-section .info-box:hover {
+    background: #c10049bf;
+    color: #fff;
+    transform: scale(0.9);
+}
+
+.contact-section .info-box:hover p {
+    color: #f1f1f1;
+}
+
+.contact-section .info-box:hover .bi {
+    background: #fff;
+    color: #c10049bf;
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-section .form {
+    margin-top: 50px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    margin-top: 10px;
+    border: none;
+    background: #f1f1f1;
+    color: #c10049bf;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact-section form button {
+    margin-top: 20px;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+    background-color: #c10049bf;
+    height: 50px;
+    width: 170px;
+    text-transform: capitalize;
+}
+
+.contact-section form button:hover {
+    background-color: #fff;
+    border: 2px solid #c10049bf;
+    color: #c10049bf;
+}
+
+/* footer section  */
+
+footer {
+    padding: 40px;
+    background: #c10049bf;
+}
+
+footer .logo {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+footer .logo i {
+    font-size: 25px;
+    background: #c10049bf;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+footer ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #d1d1d1;
+    margin-left: 30px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+footer ul li a:hover {
+    color: #FFA500;
+}
+
+footer p {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.back-to-top {
+    background: #c10049bf;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 50px;
+}
+
+@media (max-width:700px) {
+
+    .hero-section img {
+        height: 350px;
+        margin-top: 50px;
+    }
+
+    .schemes-section .schemes .card {
+        margin-bottom: 50px;
+    }
+
+    .schemes-section .schemes .row1 {
+        margin-bottom: 0px;
+    }
+
+    .about-section{
+        padding: 50px 30px;
+    }
+    .about-section img {
+        height: 300px;
+    }
+
+    .contact-section{
+        padding: 50px;
+    }
+
+    footer ul li a {
+        margin-left: 5px;
+        letter-spacing: 0;
+    }
+}
