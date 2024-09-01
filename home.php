@@ -76,35 +76,39 @@ if (!isset($_SESSION['username'])) {
             </div>
         </div>
     </section>
+    <!-- footer section  -->
 
+    <footer style="color: black;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <p class="logo"><i class="bi bi-chat"></i> EmpowerHer</p>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <ul class="d-flex">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Schemes</a></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div>
 
-    <div id="gallery">
-    <?php
-            $sql = "SELECT title, imageUrl FROM art_items ORDER BY created_at DESC";
-            $result = $conn->query($sql);
+                <div class="col-lg-2 col-md-12 col-sm-12">
+                    <p>&copy;2024_EmpowerHer</p>
+                </div>
 
-            if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
-                    echo "<div class='art-item'>";
-                    echo "<img src='" . $row["imageUrl"] . "' alt='" . $row["title"] . "'>";
-                    echo "</div>";
-                }
-            } else {
-                echo "No art available.";
-            }
-            $conn->close();
-        ?>    
-    </div>
-    <form action="artgallery.php" method="POST" id="addArtForm">
-    <input type="text" name="title" placeholder="Art Title" required>
-    <input type="url" name="imageUrl" placeholder="Art URL" required>
-    <button type="submit">Add Art</button>
-</form>
+                <div class="col-lg-1 col-md-12 col-sm-12">
+                    <!-- back to top  -->
 
+                    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                            class="bi bi-arrow-up-short"></i></a>
+                </div>
 
+            </div>
 
+        </div>
 
-
+    </footer
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
