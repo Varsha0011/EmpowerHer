@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch job entries
-$sql = "SELECT name, description, location, pay, skills, age_group, employer FROM new_j_listings";
+$sql = "SELECT name, description, location, pay, skills, age_group, employer, contact FROM new_j_listings";
 $result = $conn->query($sql);
 ?>
 
@@ -39,6 +39,7 @@ $result = $conn->query($sql);
                 echo '<p><strong>Skills:</strong> ' . $row["skills"] . '</p>';
                 echo '<p><strong>Age Group:</strong> ' . $row["age_group"] . '</p>';
                 echo '<p><strong>Employer:</strong> ' . $row["employer"] . '</p>';
+                echo '<p><strong>Contact:</strong> ' . $row["contact"] . '</p>';
                 echo '<p>' . $row["description"] . '</p>';
                 echo '</div>';
             }
@@ -48,57 +49,5 @@ $result = $conn->query($sql);
         $conn->close();
         ?>
     </div>
-    <style>
-.job-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.job-card {
-    border: none;
-    border-radius: 15px;
-    width: 280px;
-    height: 320px;
-    padding: 10px;
-    cursor: pointer;
-    background: transparent;
-    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
-}
-.job-card:hover {
-    background-color: #c2044c;
-    color: #fff;
-    transform: scale(1.1);
-}
-
-.job-card h3:hover {
-
-    color: #fff;
-
-}
-
-.job-card p :hover{
-    color: #d1d1d1;
-}
-
-.job-card h3 {
-
-    font-size: 20px;
-    font-weight: bold;
-    color: #555;
-    margin-top: 25px;
-
-}
-.job-card p{
-    font-size: 15px;
-    color: #777;
-    margin-top: 20px;
-}
-
-.job-card strong {
-    color: #333;
-}
-</style>
 </body>
 </html>

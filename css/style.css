@@ -445,7 +445,57 @@ footer p {
     margin-left: 30px;
 }
 /* Job portal */
+.job-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
+.job-card {
+    border: none;
+    border-radius: 15px;
+    width: 280px;
+    height: 320px;
+    padding: 10px;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+}
+.job-card:hover {
+    background-color: #c2044c;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.job-card h3:hover {
+
+    color: #fff;
+
+}
+
+.job-card p :hover{
+    color: #d1d1d1;
+}
+
+.job-card h3 {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+
+}
+.job-card p{
+    font-size: 15px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.job-card strong {
+    color: #333;
+}
+/* end job portal */
 
 .back-to-top {
     background: black;
