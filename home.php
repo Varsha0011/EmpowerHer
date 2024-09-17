@@ -1,17 +1,3 @@
-<?php
-session_start();
-
-include("connection.php");
-
-if (!isset($_SESSION['username'])) {
-    header("location:login.php");
-}
-
-
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,11 +37,12 @@ if (!isset($_SESSION['username'])) {
                             <a class="nav-link" href="artgallery.php">Art Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="logout.php">Logout</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="Profile.php">Profile</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php">Logout</a>
+                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -68,7 +55,7 @@ if (!isset($_SESSION['username'])) {
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12 text-content">
                     <h1>Welcome to EmpowerHer</h1>
-                    <p>Your hub for empowerment through job opportunities and creative expression.</p>
+                    <!-- <p>Your hub for empowerment through job opportunities and creative expression.</p> -->
                 </div>
                 <div class="col-lg-8 col-md-12 col-sm-12">
                     <img src="images/homepic.png" alt="ruralwomen" class="img-fluid">
@@ -77,7 +64,6 @@ if (!isset($_SESSION['username'])) {
         </div>
     </section>
     <!-- footer section  -->
-
     <footer style="color: black;">
         <div class="container">
             <div class="row">
@@ -92,27 +78,22 @@ if (!isset($_SESSION['username'])) {
                         <li><a href="#">contact</a></li>
                     </ul>
                 </div>
-
                 <div class="col-lg-2 col-md-12 col-sm-12">
                     <p>&copy;2024_EmpowerHer</p>
                 </div>
-
                 <div class="col-lg-1 col-md-12 col-sm-12">
                     <!-- back to top  -->
-
                     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
                             class="bi bi-arrow-up-short"></i></a>
                 </div>
-
             </div>
-
         </div>
-
-    </footer
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
-        <script src="script.js"> </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
