@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="css/style1.css">
-</head>
+</head>s
 
 <body>
     <div class="container">
