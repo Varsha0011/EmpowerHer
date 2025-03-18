@@ -1,0 +1,117 @@
+/* General Body Styling */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark color for text */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* White color for header */
+    background-color: #d21759; /* Pink background for header */
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px; /* Padding for header */
+    border-radius: 8px; /* Rounded corners for header */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Optional shadow for readability */
+}
+
+/* Form and Gallery Container Styling */
+.container {
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Form Styling */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for the form background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    max-width: 600px; /* Maximum width for the form */
+    margin: 0 auto; /* Center the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Art Gallery Card Styling */
+.art-item {
+    margin: 20px 0; /* Space between art items */
+}
+
+/* Input Fields and Labels Styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Dark color for labels */
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding for comfort */
+    margin-bottom: 20px; /* Space between fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+}
+
+/* Button Styling */
+button {
+    background-color: #fbb03b; /* Button color */
+    border: none; /* Remove border */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 1.1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width */
+}
+
+button:hover {
+    background-color: #d1970a; /* Darker color on hover */
+}
+
+/* Link Styling */
+a {
+    display: block; /* Make the link a block element */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the link */
+    color: #d21759; /* Pink color for link */
+    font-size: 1rem; /* Font size */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Gallery Specific Styling */
+.card {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ccc; /* Light border for cards */
+    border-radius: 5px; /* Rounded corners for cards */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.card-img-top {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem; /* Adjust button size */
+    }
+
+    .art-item {
+        flex: 0 0 100%; /* Stack items on smaller screens */
+    }
+}

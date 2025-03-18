@@ -38,7 +38,7 @@
                     <p>Message sending fail 😔</p>
                     </div><br>";
 
-                    echo "<a href='index.php'><button class='btn'>Go Back</button></a>";
+                    echo "<a href='index.html'><button class='btn'>Go Back</button></a>";
                 }
             }
 

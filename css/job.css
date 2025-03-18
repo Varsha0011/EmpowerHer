@@ -1,0 +1,126 @@
+/* Job portal */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    padding: 20px;
+    background: #c2044c;
+}
+
+.navbar .navbar-toggler {
+    color: #fff !important;
+    background: #fff;
+    border-radius: 50%;
+    padding: 15px;
+    outline: none;
+    border: none;
+}
+
+.navbar #navbarNav {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.navbar .navbar-brand {
+    color: #f1f1f1;
+    font-size: 30px;
+    margin-left: 0px;
+    font-weight: 600;
+}
+
+.navbar .navbar-brand i {
+    font-size: 25px;
+    background: #c2044c;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+.navbar .collapse {
+    background: #c2044c
+}
+
+.navbar .dropdown-menu{
+    width: 12px;
+}
+
+.navbar .dropdown-menu li a{
+    color: #c2044c;
+    font-size: 15px;
+}
+
+.navbar ul li .bi{
+    background: #fff;
+    color: #c2044c;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+.navbar ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.navbar ul li a:hover {
+    color: #FFA500;
+}
+.job-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.job-card {
+    border: none;
+    border-radius: 15px;
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.3);
+}
+/* .job-card:hover {
+    background-color: #c2044c;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.job-card h3:hover {
+
+    color: #fff;
+
+}
+
+.job-card p :hover{
+    color: #d1d1d1;
+} */
+
+.job-card h3 {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+
+}
+.job-card p{
+    font-size: 15px;
+    color: #777;
+    margin-top: 20px;
+}
+
+.job-card strong {
+    color: #333;
+}
+/* end job portal */

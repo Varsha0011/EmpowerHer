@@ -33,8 +33,11 @@ session_start();
           $password = $row['password'];
 
           if (password_verify($pass, $password)) {
+            // Set session variables
             $_SESSION['email'] = $row['email'];
-            $_SESSION['username'] = $row['username'];
+            $_SESSION['username'] = $row['username']; // Assuming this is the name you want to use
+            $_SESSION['user_id'] = $row['id']; // Assuming you have a user ID column
+
             header("location: home.php");
             exit();
 
@@ -54,7 +57,6 @@ session_start();
 
       } else {
         ?>
-
         <header>Login</header>
         <hr>
         <form action="login.php" method="POST">
@@ -75,7 +77,6 @@ session_start();
             <div class="remember">
               <input type="checkbox" class="check" name="remember_me">
               <label for="remember">Remember me</label>
-              <!-- <span><a href="forgot.php">Forgot password</a></span> -->
             </div>
 
           </div>

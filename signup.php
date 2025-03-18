@@ -37,12 +37,9 @@
             $cpass = $_POST['cpass'];
 
 
-            $check = "select * from users where email='{$email}'";
-
+            $check = "select * from users where email='{$email}'";  
             $res = mysqli_query($conn, $check);
-
             $passwd = password_hash($pass, PASSWORD_DEFAULT);
-
             $key = bin2hex(random_bytes(12));
 
 
