@@ -1,4 +1,14 @@
 <?php
+session_start();
+if (!isset($_SESSION['email'])) {
+    $_SESSION['redirect_to'] = $_SERVER['REQUEST_URI'];
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
+<?php
 // Start the session to access user info
 session_start();
 

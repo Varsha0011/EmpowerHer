@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (!isset($_SESSION['email'])) {
+    $_SESSION['redirect_to'] = $_SERVER['REQUEST_URI'];
+    header("Location: login.php");
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,6 +73,8 @@
             </div>
         </div>
     </section>
+    
+
     <!-- footer section  -->
     <footer style="color: black;">
         <div class="container">
@@ -72,10 +84,10 @@
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
                     <ul class="d-flex">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Schemes</a></li>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#schemes">Schemes</a></li>
+                        <li><a href="index.html#about">about us</a></li>
+                        <li><a href="index.html#contact">contact</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-12 col-sm-12">

@@ -35,28 +35,35 @@ session_start();
           if (password_verify($pass, $password)) {
             // Set session variables
             $_SESSION['email'] = $row['email'];
-            $_SESSION['username'] = $row['username']; // Assuming this is the name you want to use
-            $_SESSION['user_id'] = $row['id']; // Assuming you have a user ID column
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['user_id'] = $row['id'];
 
-            header("location: home.php");
+            // Redirect to original page if set
+            if (isset($_SESSION['redirect_to'])) {
+              $redirect = $_SESSION['redirect_to'];
+              unset($_SESSION['redirect_to']);
+              header("Location: $redirect");
+            } else {
+              header("Location: home.php");
+            }
             exit();
 
           } else {
             echo "<div class='message'>
                     <p>Wrong Password</p>
-                    </div><br>";
+                  </div><br>";
             echo "<a href='login.php'><button class='btn'>Go Back</button></a>";
           }
 
         } else {
           echo "<div class='message'>
-                    <p>Wrong Email or Password</p>
-                    </div><br>";
+                  <p>Wrong Email or Password</p>
+                </div><br>";
           echo "<a href='login.php'><button class='btn'>Go Back</button></a>";
         }
 
       } else {
-        ?>
+      ?>
         <header>Login</header>
         <hr>
         <form action="login.php" method="POST">
@@ -88,12 +95,13 @@ session_start();
           </div>
 
         </form>
-      </div>
-      <?php
+    </div>
+  <?php
       }
-      ?>
+  ?>
   </div>
 
 </body>
 
 </html>
+ 

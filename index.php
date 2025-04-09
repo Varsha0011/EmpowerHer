@@ -49,8 +49,34 @@
                     </ul>
                 </div>
             </div>
+            <div class="search-container">
+            <input  class="form-control mr-sm-2" type="text" id="prompt" placeholder="What do you want to do?">
+            <button  class="btn btn-outline-success my-2 my-sm-0" onclick="searchPage()">Search</button>
+            </div>
         </nav>
     </header>
+
+
+    <!-- for prompt search start..... -->
+    <script>
+    function searchPage() {
+        const query = document.getElementById("prompt").value;
+
+        fetch("http://127.0.0.1:5000/search", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ query: query })
+        })
+        .then(res => res.json())
+        .then(data => {
+            window.location.href = data.url;
+        })
+        .catch(err => console.error("Error:", err));
+    }
+    </script>
+    <!-- for prompt search end...... -->
 
     <!-- hero section  -->
 
@@ -280,7 +306,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

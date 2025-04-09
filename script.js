@@ -89,3 +89,4 @@ addArtForm.addEventListener('submit', function(event) {
     // Optionally, reset the form
     addArtForm.reset();
 });
+//prompt search js

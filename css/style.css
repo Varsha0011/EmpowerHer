@@ -83,6 +83,32 @@
     color: #FFA500;
     padding: 50px;
 }
+.navbar .form-control {
+    width: 250px;
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+
+.navbar .btn {
+    background-color: #fff;
+    color: #c2044c;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.navbar .btn:hover {
+    background-color: #FFA500;
+    color: white;
+    border: 2px solid #FFA500;
+}
+
 
 /* hero section  */
 
@@ -450,7 +476,7 @@ footer p {
     font-size: 15px;
     margin-left: 30px;
 }
-/
+
 
 
 
